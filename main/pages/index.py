@@ -3,7 +3,7 @@ import reflex as rx
 from main.layouts.dashboard_layout import dashboard_layout
 
 @rx.page("/index", title="Dashboard - Reflex")
-def dashboard() -> rx.Component:
+def index() -> rx.Component:
     return dashboard_layout(
         rx.box(
             rx.heading("Dashboard", size="8", weight="bold"),
@@ -12,6 +12,7 @@ def dashboard() -> rx.Component:
                 size="4",
                 color="gray",
             ),
-            spacing="1.5rem",
+            spacing="0",
+            # spacing="1.5rem",
         )
     )

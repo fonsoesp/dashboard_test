@@ -3,11 +3,11 @@
 import reflex as rx
 
 from rxconfig import config
-from main.pages.index import dashboard
+from main.pages.index import index
 
 class State(rx.State):
     """The app state."""
 
 
 app = rx.App()
-app.add_page(dashboard)
+app.add_page(index)

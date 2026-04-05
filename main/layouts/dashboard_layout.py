@@ -1,8 +1,10 @@
 import reflex as rx
 from main.components.sidebar import sidebar_bottom_profile
+from main.components.footer import footer
+from main.components.navbar import navbar
 
 def dashboard_layout(content: rx.Component) -> rx.Component:
-    return rx.flex(
+    return rx.vstack(
         sidebar_bottom_profile(),
         rx.box(
             content,
